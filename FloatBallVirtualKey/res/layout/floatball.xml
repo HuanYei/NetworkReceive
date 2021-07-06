@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatball_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:animateLayoutChanges="true"
+    >
+
+    <ImageView
+        android:id="@+id/show_floatball"
+        android:layout_width="@dimen/y60"
+        android:layout_height="@dimen/x60"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/floatball" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/exit"
+            android:textSize="40px"
+            android:text="◁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:textColor="@color/white"
+            android:id="@+id/home"
+            android:layout_weight="1"
+            android:textSize="40px"
+            android:text="◯"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_not_found">Application not found!</string>
+    <string name="not_found">not found app</string>
+    <string name="use_mouse">use mouse</string>
+    <string name="app_name">FloatBall</string>
+    <string name="hello_world">请在设置的辅助功能打开悬浮球</string>
+    <string name="action_settings">Settings</string>
+	<string name="install">AkpManager</string>
+	<string name="localMM">高清播放器</string>
+	<string name="setting">Setting</string>
+	<string name="word">开机启动</string>
+	<string name="title1">模块</string>
+	<string name="title2">自启动APP</string>
+	<string name="password">请输入4位密码</string>
+	<string name="passwordsucces">输入成功</string>
+	<string name="passwordfail">输入错误，请重新输入</string>
+	<string name="passwordButton">确定</string>
+	
+	<string name="dialog_tile">系统提示</string>
+	<string name="app_dialog_msg">是否加入开机启动</string>
+	<string name="addsucces">加入成功</string>
+	<string name="app_dialog_sure">确定</string>
+	<string name="app_dialog_cancel">取消</string>
+	<string name="button_dialog_msg">请选择</string>
+	
+	<string name="button_dialog_cancel">取消开机启动</string> 
+	<string name="button_dialog_start">启动应用</string> 
+	<string name="cancelsucces">取消成功</string> 
+	<string name="show_ball">显示悬浮球</string>
+    <string name="hide_ball">隐藏悬浮球</string>
+    <string name="dialog_source">通道</string>
+    <string name="dialog_menu">菜单</string>
+    <string name="dialog_mute">静音</string>
+    <string name="dialog_vol_loud">音量+</string>
+    <string name="dialog_vol_low">音量-</string>
+    <string name="dialog_ch_loud">频道+</string>
+    <string name="dialog_ch_low">频道-</string>
+    <string name="dialog_home">首页</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="dialog_back">返回</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_floatball">小球</string>
+     <string name="item1">Item1</string>
+    <string name="accessibility">开启我的悬浮球</string>
+    <string name="accessibility_lable">用于开启悬浮球和其操作权限</string>
+    
+    <string name="dialog_msg">打开小白点</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_shut">关闭</string>
+</resources>

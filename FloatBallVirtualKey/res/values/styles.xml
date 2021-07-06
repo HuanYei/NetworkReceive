@@ -1,0 +1,41 @@
+<resources>
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="image_itme">
+        <item name="android:layout_width">@dimen/y70</item>
+        <item name="android:layout_height">@dimen/y50</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_margin">@dimen/x5</item>
+    </style>
+
+    <style name="bottom_image_itme">
+        <item name="android:layout_width">@dimen/y40</item>
+        <item name="android:layout_height">@dimen/y40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/x17</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppDialog" parent="@android:style/Widget.PopupWindow">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:popupBackground">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+</resources>
