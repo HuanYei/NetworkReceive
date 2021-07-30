@@ -7,6 +7,16 @@
     android:animateLayoutChanges="true"
     >
 
+    <Button
+        android:id="@+id/text"
+        android:textColor="@color/white"
+        android:text="黑屏肃静"
+        android:textSize="150dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
     <ImageView
         android:id="@+id/show_floatball"
         android:layout_width="@dimen/y60"

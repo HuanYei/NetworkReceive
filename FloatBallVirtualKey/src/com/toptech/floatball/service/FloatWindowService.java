@@ -1,5 +1,6 @@
 package com.toptech.floatball.service;
 
+import android.annotation.SuppressLint;
 import android.app.Instrumentation;
 import android.app.Notification;
 import android.app.Service;
@@ -24,6 +25,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
 import com.toptech.floatball.R;
 import com.toptech.floatball.util.Utils;
 
@@ -44,9 +47,7 @@ public class FloatWindowService extends Service {
 	private static WindowManager wManager;
 	private static WindowManager.LayoutParams params;
 	private RelativeLayout mLayout;
-	private long downTime, upTime;
-	int lastX, lastY;
-	int paramX, paramY;
+	private TextView textView;
 	private ImageView floatBallImageView;
 	public boolean open = false;
 	private Animation mAnimation;
@@ -119,6 +120,7 @@ public class FloatWindowService extends Service {
 	}
 	private Handler mHandler = new Handler(){
 
+		@SuppressLint("HandlerLeak")
 		@Override
 		public void handleMessage(Message msg) {
 			if(msg.what == 1){
@@ -140,7 +142,12 @@ public class FloatWindowService extends Service {
 					} catch (Resources.NotFoundException e) {
 						e.printStackTrace();
 					}
-				}else {
+				}else if (msg.obj.toString().indexOf("text:")!=-1){
+					String s=msg.obj.toString();
+					String text=s.substring(5);
+					textView.setText(text);
+				}
+				else {
 					SendKey(Integer.parseInt(msg.obj.toString()));
 				}
 			}
@@ -177,6 +184,7 @@ public class FloatWindowService extends Service {
 		floatBallImageView = (ImageView) mLayout.findViewById(R.id.show_floatball);
 		Button exitButton=(Button) mLayout .findViewById(R.id.exit);
 		Button homeButton=(Button) mLayout .findViewById(R.id.home);
+		textView=mLayout.findViewById(R.id.text);
 		wManager.addView(mLayout, params); // 把配置好的视图添加进去
 
 
